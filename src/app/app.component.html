@@ -1,0 +1,13 @@
+
+<div class="container">
+  <div style=text-align:center>
+  <h1> welocme to {{title}}</h1>
+  <a href="" class="btn btn-secondary btn-block"
+   [routerLink]="[{outlets:{primary:['products'],sidebar:['products']}}]">Products
+  </a>
+  </div>
+  <div>
+    <div style="float:right"><router-outlet></router-outlet></div>
+    <div style="float:left"><router-outlet name="sidebar"></router-outlet></div>
+  </div>
+</div>
